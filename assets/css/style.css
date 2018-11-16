@@ -3,3 +3,59 @@
     padding: 10px;
     height: 150px;
 }
+#instructions {
+    background-color: aquamarine;
+    text-align: center;
+    width: 60%;
+    margin: 40px auto; 
+    padding: 20px;
+}
+#computer-number {
+    font-size: 24px;
+    color: blueviolet;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#wins {
+    font-size: 20px;
+    color: darkblue;
+    padding: 10px;
+}
+
+#losses {
+    font-size: 20px;
+    color: darkblue;
+    padding: 10px;    
+}
+
+#total {
+    font-size: 20px;
+    color: darkblue;
+    padding: 10px;    
+}
+
+#crystals {
+    text-align: center;
+}
+#number {
+    background-color: lightblue;
+    width: 10%;
+    margin: 25px 25px 25px 200px;
+    padding: 20px;
+    float: left;
+}
+
+#wins-losses{
+    background-color: hotpink;
+    width: 10%;
+    float: right;
+    margin: 25px 200px 25px 25px;
+    padding: 20px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
