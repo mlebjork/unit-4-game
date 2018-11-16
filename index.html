@@ -9,19 +9,35 @@
 
 </head>
 <body>
-    <div id="instruction">
-        instruction
+    <div id="instructions">
+            <ul>
+                    <li>You will be given a random &ldquo;target number&rdquo; at the start of
+                        each game.</li>
+                    <li>Each crystal, located below, will be worth a random amount of points. This
+                        amount is hidden from view.</li>
+                    <li>You win the game by matching your total score to the assigned random number.
+                        You lose the game if your total score goes above the random number.</li>
+                </ul>
     </div>
-    <div id="computer-number"></div>
-    <h2>wins</h2>
-    <div id="wins">
-    
+    <div class="clearfix">
+        <div id="number">
+            <h2>Target number:</h2>
+            <div id="computer-number"></div>
+            <h2>Your total score is:</h2>
+            <div id="total">0</div>
+        </div>  
+        <div id="wins-losses">
+            <h2>Wins:</h2>
+            <div>
+                <p id="wins">0</p>
+            </div>
+            <h2>Losses:</h2>
+            <div id="losses">0</div>
+        </div>   
     </div>
-    <h2>losses</h2>
-    <div id="losses"></div>
+        
     <div id="crystals"></div>
-    <div>Your total score is:</div>
-    <div id="total"></div>
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
