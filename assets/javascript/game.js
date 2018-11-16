@@ -27,8 +27,8 @@ var crystal=[
 ]
 crystal.forEach(element => {
     // console.log(element);
-    var rand = Math.floor(Math.random() * 12) + 1;
-    $('#crystals').append(`<img class="crystal" src="${element.img}" data-points="${rand}">`)
+    element.score = Math.floor(Math.random() * 12) + 1;
+    $('#crystals').append(`<img class="crystal" src="${element.img}" data-points="${element.score}">`)
 });
 
 
@@ -52,23 +52,23 @@ $(".crystal").on("click", function() {
     var crystalValue = parseInt($(this).attr("data-points"));
     userTotal = userTotal + crystalValue;
     if(userTotal < computerNumber) {
-        $("#total").html(userTotal)
+        $("#total").text(userTotal)
     } else if(userTotal === computerNumber){
         wins++
-        $("#wins").html(wins)
+        $("#wins").text(wins)
         computerNumber = makeRandCompNumber()
-        $("#computer-number").html(computerNumber)
-        $("#total").html(0)
+        $("#computer-number").text(computerNumber)
+        $("#total").text(0)
         userTotal = 0
         resetCrystals()
 
         // alert("You won!")
     } else {
         losses++
-        $("#losses").html(losses)
+        $("#losses").text(losses)
         computerNumber = makeRandCompNumber()
-        $("#computer-number").html(computerNumber)
-        $("#total").html(0)
+        $("#computer-number").text(computerNumber)
+        $("#total").text(0)
         userTotal = 0
         resetCrystals()
         // alert("You lost!")
